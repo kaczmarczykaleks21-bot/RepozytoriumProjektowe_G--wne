@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Aleks Kaczmarczyk</title>
+    <link id="stylesheet" rel="stylesheet" href="./stylesheets/red.css" />
+    <script src="./js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/ac32e74fe2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <nav>
+          <a class="sectonsBtn" href="#aboutMe">O mnie</a>
+          <a class="sectonsBtn" href="#contact">Kontakt</a>
+          <a class="sectonsBtn" href="#skills">Umiejętności</a>
+          <a class="sectonsBtn" href="#experience">Doświadczenie</a>
+          <a class="sectonsBtn" href="#education">Edukacja</a>
+          <a class="sectonsBtn" href="#projects">Projekty</a>
+          <a id="toggleStyleBtn">Zmień styl</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <section class="aboutMe" id="aboutMe">
+          <div class="aboutme-txt">
+            <article>
+              <h2 class="neonGreen"><i class="fa-solid fa-user"></i> O mnie</h2>
+              <h4>
+                <span class="blue"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <span class="blue">Warszawa</span>
+              </h4>
+              <h1>Aleks Kaczmarczyk</h1>
+              <p>
+                Student informatyki na uczelni
+                <a
+                  href="https://vistula.edu.pl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="bright-blue"
+                  >Vistula</a
+                >, Web developer
+              </p>
+            </article>
+          </div>
+          <div class="image-container">
+            <img
+              class="profile-picture"
+              src="./img/avatar.png"
+              alt="profile_pictureIMG"
+            />
+          </div>
+        </section>
+        <div class="technologies">
+          <div class="techno-images">
+            <img src="./img/html.png" alt="htmlIMG" />
+            <p>HTML</p>
+          </div>
+          <div class="techno-images">
+            <img src="./img/css.png" alt="cssIMG" />
+            <p>CSS</p>
+          </div>
+          <div class="techno-images">
+            <img src="./img/javascript.png" alt="javascriptIMG" />
+            <p>Javascript</p>
+          </div>
+          <div class="techno-images">
+            <img src="./img/nodejs.png" alt="nodejsIMG" />
+            <p>Node.js</p>
+          </div>
+          <div class="techno-images">
+            <img src="./img/ejs.png" alt="ejsIMG" />
+            <p>Ejs</p>
+          </div>
+        </div>
+        <section class="sections contact" id="contact">
+          <h2 class="blue"><i class="fa-solid fa-address-book"></i> Kontakt</h2>
+          <ul>
+            <li>
+              <span class="bold"><i class="fa-solid fa-at"></i> email:</span>
+              <a href="mailto:kaczmarczykaleks21@gmail.com" class="bright-blue"
+                >kaczmarczykaleks21@gmail.com</a
+              >
+            </li>
+            <li>
+              <span class="bold"><i class="fa-solid fa-phone"></i> Tel:</span>
+              +48 532 004 040
+            </li>
+            <li>
+              <span class="bold"
+                ><i class="fa-solid fa-location-dot"> </i>Miasto:</span
+              >
+              Warszawa, Serock
+            </li>
+          </ul>
+          <div class="links-container">
+            <a
+              class="links"
+              id="linkedin"
+              href="https://www.linkedin.com/in/aleks-kaczmarczyk-70434539a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+            >
+            <a
+              class="links"
+              id="github"
+              href="https://github.com/kaczmarczykaleks21-bot"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+          </div>
+          <div>
+            <button class="btns" id="contactMeBtn" onclick="goToContactForm()">
+              Skontaktuj się ze mną
+            </button>
+          </div>
+        </section>
+        <section class="sections skills" id="skills">
+          <h2 class="cadetBlue">
+            <i class="fa-solid fa-chalkboard-user"></i> Umiejętności
+          </h2>
+          <div class="hard-skills">
+            <h3 class="white-smoke">
+              <i class="fa-solid fa-map-pin"></i> Umiejętności twarde
+            </h3>
+            <ul>
+              <li>Angielski c2,</li>
+              <li>Znajomość Javascriptu,</li>
+              <li>Znajomość HTML'a i CSS'a,</li>
+              <li>Znajomość Node.js i express.js,</li>
+              <li>Znajomość ejs</li>
+            </ul>
+          </div>
+          <div class="soft-skills">
+            <h3 class="white-smoke">
+              <i class="fa-solid fa-map-pin"></i> Umiejętności miękkie
+            </h3>
+            <ul>
+              <li>Zapał do nauki,</li>
+              <li>Pasja do programowania,</li>
+              <li>Opanowanie,</li>
+              <li>Logiczne myślenie,</li>
+              <li>Dobre umiejętności komunikacyjne</li>
+            </ul>
+          </div>
+        </section>
+        <section class="sections experience" id="experience">
+          <h2 class="green">
+            <i class="fa-regular fa-address-card"></i> Doświadczenie
+          </h2>
+          <div>
+            <button
+              id="displaySectionBtn"
+              class="displaySectionBtn fa-solid fa-angle-up"
+            ></button>
+          </div>
+          <div id="experience-container">
+            <h3 class="white-smoke">
+              <i class="fa-solid fa-circle-user"></i> Projekty własne (2023 –
+              obecnie)
+            </h3>
+            <ul>
+              <li>
+                tworzę responsywne interfejsy użytkownika (HTML5, CSS3, Flexbox,
+                Grid),
+              </li>
+              <li>implementuję logikę aplikacji w JavaScript (ES6+),</li>
+              <li>buduję backend w Node.js z wykorzystaniem Express,</li>
+              <li>tworzę routing oraz dynamiczne widoki przy użyciu EJS,</li>
+              <li>
+                pracuję z formularzami, walidacją danych oraz manipulacją DOM,
+              </li>
+              <li>dbam o czytelność i strukturę kodu.</li>
+            </ul>
+            <h3 class="white-smoke">
+              <i class="fa-solid fa-school"></i> Projekty uczelniane (2023 –
+              2026)
+            </h3>
+            <ul>
+              <li>tworzenie stron i aplikacji webowych,</li>
+              <li>współpracę zespołową oraz podział zadań,</li>
+              <li>analizę wymagań projektowych,</li>
+              <li>prezentację oraz dokumentację wykonanych rozwiązań,</li>
+              <li>
+                rozwój umiejętności logicznego myślenia i rozwiązywania
+                problemów.
+              </li>
+            </ul>
+            <h3 class="white-smoke">
+              <i class="fa-solid fa-arrow-trend-up"></i> Rozwój techniczny i
+              kursy
+            </h3>
+            <ul>
+              <li>HTML i CSS — budowanie responsywnych stron internetowych,</li>
+              <li>
+                JavaScript (ES6+) — praca z DOM, eventy, asynchroniczność,
+              </li>
+              <li>
+                Node.js i Express — tworzenie backendu oraz obsługa serwera,
+              </li>
+              <li>
+                Projektowanie stron internetowych — podstawy UI/UX i struktury
+                aplikacji.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="sections education" id="education">
+          <h2 class="black">
+            <i class="fa-solid fa-user-graduate"></i> Wykształcenie
+          </h2>
+          <div>
+            <h3 class="white-smoke center">Wykształcenie - ogólne</h3>
+            <article>
+              <h4>Informatyka (studia I stopnia, inżynierskie/licencjackie)</h4>
+              <p>
+                Akademia Finansów i Biznesu Vistula 2023 – 2026, aktualnie 3 rok
+                studiów
+              </p>
+            </article>
+          </div>
+          <div>
+            <h3 class="white-smoke">
+              <i class="fa-brands fa-medapps"></i> Stack technologiczny:
+            </h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3 (Flexbox, Grid, Responsywny design)</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Ejs</li>
+            </ul>
+            <div>
+              <h3 class="white-smoke">
+                <i class="fa-solid fa-language"></i> Języki obce:
+              </h3>
+              <article>
+                <p>Angielski – poziom C2 (biegła znajomość w mowie i piśmie)</p>
+              </article>
+            </div>
+          </div>
+          <div class="courses">
+            <h3 class="white-smoke">Moje kursy:</h3>
+            <ul>
+              <li>
+                Kurs html/css
+                <a
+                  href="https://www.udemy.com/course/web-developer-course-on-creating-a-business-website/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+              </li>
+              <li>
+                Kurs javascript
+                <a
+                  href="https://www.udemy.com/course/the-complete-javascript-course/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+              </li>
+              <li>
+                Kurs node.js
+                <a
+                  href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+              </li>
+              <li>
+                Kurs projektowania stron internetowych
+                <a
+                  href="https://www.udemy.com/course/web-design-secrets/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="sections projects" id="projects">
+          <h2 class="bright-blue">
+            <i class="fa-solid fa-briefcase"></i>Moje projekty:
+          </h2>
+          <div class="projects-container">
+            <div class="display-projects">
+              <ul>
+                <li>
+                  <span class="bold">keepLater</span> - strona do zapisywania
+                  rzeczy na później
+                  <a
+                    href="https://github.com/kaczmarczykaleks21-bot/KeepLater"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Link do projektu</a
+                  >
+                </li>
+                <li>
+                  <span class="bold">Linga.edu</span> - strona do nauki
+                  hiszpańskiego
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Link do projektu</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div class="navbar-container hidden">
+      <nav id="sticky-navbar">
+        <a class="sectonsBtn" href="#aboutMe">O mnie</a>
+        <a class="sectonsBtn" href="#contact">Kontakt</a>
+        <a class="sectonsBtn" href="#skills">Umiejętności</a>
+        <a class="sectonsBtn" href="#experience">Doświadczenie</a>
+        <a class="sectonsBtn" href="#education">Edukacja</a>
+        <a class="sectonsBtn" href="#projects">Projekty</a>
+      </nav>
+    </div>
+    <footer></footer>
+  </body>
+</html>
