@@ -32,13 +32,13 @@ C:.
 1. Pobierz projekt lub sklonuj repozytorium:
 
    ```
-   git clone https://github.com/kaczmarczykaleks21-bot/RepozytoriumProjektowe_Snapshoty.git
+   git clone https://github.com/kaczmarczykaleks21-bot/RepozytoriumProjektowe_Główne.git
    ```
 
 2. Przejdź do folderu projektu:
 
    ```
-   cd zad4
+
    ```
 
 3. Otwórz plik `index.html` w przeglądarce
