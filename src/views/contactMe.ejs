@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../stylesheets/contactMe.css" />
-    <script src="../js/contactForm.js" defer></script>
+    <link rel="stylesheet" href="/stylesheets/contactMe.css" />
+    <script src="/js/contactForm.js" defer></script>
     <script
       src="https://kit.fontawesome.com/ac32e74fe2.js"
       crossorigin="anonymous"
@@ -21,12 +21,26 @@
     <main>
       <div class="form-container">
         <h2>Formularz kontaktowy</h2>
-
-        <form onsubmit="sendMessage(event)">
-          <input type="text" placeholder="Twoje imię" required />
-          <input type="text" placeholder="Twoje nazwisko" required />
-          <input type="email" placeholder="Email" required />
-          <textarea rows="4" placeholder="Wiadomość" required></textarea>
+        <form method="post">
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Twoje imię"
+            required
+          />
+          <input
+            type="text"
+            name="surname"
+            placeholder="Twoje nazwisko"
+            required
+          />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea
+            rows="4"
+            name="message"
+            placeholder="Wiadomość"
+            required
+          ></textarea>
           <button type="submit">Wyślij</button>
         </form>
       </div>

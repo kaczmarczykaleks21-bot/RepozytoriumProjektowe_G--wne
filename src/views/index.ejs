@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV - Aleks Kaczmarczyk</title>
-    <link id="stylesheet" rel="stylesheet" href="./stylesheets/red.css" />
-    <script type="module" src="./js/main.js"></script>
+    <link id="stylesheet" rel="stylesheet" href="/stylesheets/red.css" />
+    <script type="module" src="/js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/ac32e74fe2.js"
       crossorigin="anonymous"
@@ -21,12 +21,12 @@
     <header>
       <div class="header-container">
         <nav>
-          <a class="sectonsBtn" href="#aboutMe">O mnie</a>
-          <a class="sectonsBtn" href="#contact">Kontakt</a>
-          <a class="sectonsBtn" href="#skills">Umiejętności</a>
-          <a class="sectonsBtn" href="#experience">Doświadczenie</a>
-          <a class="sectonsBtn" href="#education">Edukacja</a>
-          <a class="sectonsBtn" href="#projects">Projekty</a>
+          <a class="sectionsBtn" href="#aboutMe">O mnie</a>
+          <a class="sectionsBtn" href="#contact">Kontakt</a>
+          <a class="sectionsBtn" href="#skills">Umiejętności</a>
+          <a class="sectionsBtn" href="#experience">Doświadczenie</a>
+          <a class="sectionsBtn" href="#education">Edukacja</a>
+          <a class="sectionsBtn" href="#projects">Projekty</a>
           <a id="toggleStyleBtn">Zmień styl</a>
         </nav>
       </div>
@@ -59,30 +59,30 @@
           <div class="image-container">
             <img
               class="profile-picture"
-              src="./img/avatar4.png"
+              src="/img/avatar4.png"
               alt="profile_pictureIMG"
             />
           </div>
         </section>
         <div class="technologies">
           <div class="techno-images">
-            <img src="./img/html.png" alt="htmlIMG" />
+            <img src="/img/html.png" alt="htmlIMG" />
             <p>HTML</p>
           </div>
           <div class="techno-images">
-            <img src="./img/css.png" alt="cssIMG" />
+            <img src="/img/css.png" alt="cssIMG" />
             <p>CSS</p>
           </div>
           <div class="techno-images">
-            <img src="./img/javascript.png" alt="javascriptIMG" />
+            <img src="/img/javascript.png" alt="javascriptIMG" />
             <p>Javascript</p>
           </div>
           <div class="techno-images">
-            <img src="./img/nodejs.png" alt="nodejsIMG" />
+            <img src="/img/nodejs.png" alt="nodejsIMG" />
             <p>Node.js</p>
           </div>
           <div class="techno-images">
-            <img src="./img/ejs.png" alt="ejsIMG" />
+            <img src="/img/ejs.png" alt="ejsIMG" />
             <p>Ejs</p>
           </div>
         </div>
@@ -124,7 +124,7 @@
               ><i class="fa-brands fa-github"></i> Github</a
             >
           </div>
-          <div>
+          <div class="contactBtn-container">
             <button class="btns" id="contactMeBtn" onclick="goToContactForm()">
               Skontaktuj się ze mną
             </button>
@@ -138,13 +138,28 @@
             <h3 class="white-smoke">
               <i class="fa-solid fa-map-pin"></i> Umiejętności twarde
             </h3>
-            <ul id="hard-skills"></ul>
+            <ul id="hard-skills">
+              <% skills.umiejetnosci.twarde.forEach(skill => { %>
+              <li>
+                <%= skill.nazwa %>
+                <% if(skill.poziom) { %>
+                <%= skill.poziom %>
+                <% } %>
+              </li>
+              <%}); %>
+            </ul>
           </div>
           <div class="soft-skills">
             <h3 class="white-smoke">
               <i class="fa-solid fa-map-pin"></i> Umiejętności miękkie
             </h3>
-            <ul id="soft-skills"></ul>
+            <ul id="soft-skills">
+              <% skills.umiejetnosci.miekkie.forEach(skill => { %>
+              <li>
+                <%= skill %>
+              </li>
+              <% }) %>
+            </ul>
           </div>
         </section>
         <section class="sections experience" id="experience">
@@ -162,17 +177,36 @@
               <i class="fa-solid fa-circle-user"></i> Projekty własne (2023 –
               obecnie)
             </h3>
-            <ul id="personal-projects"></ul>
+            <ul id="personal-projects">
+              <% experience.projekty_wlasne.opis.forEach(experience => { %>
+              <li>
+                <%= experience %>
+              </li>
+              <%}) %>
+              %>
+            </ul>
             <h3 class="white-smoke">
               <i class="fa-solid fa-school"></i> Projekty uczelniane (2023 –
               2026)
             </h3>
-            <ul id="uni-projects"></ul>
+            <ul id="uni-projects">
+              <% experience.projekty_uczelniane.opis.forEach(experience => { %>
+              <li>
+                <%= experience %>
+              </li>
+              <%})%>
+            </ul>
             <h3 class="white-smoke">
               <i class="fa-solid fa-arrow-trend-up"></i> Rozwój techniczny i
               kursy
             </h3>
-            <ul id="technical-development"></ul>
+            <ul id="technical-development">
+              <% experience.rozwoj_techniczny.opis.forEach(experience => { %>
+              <li>
+                <%= experience %>
+              </li>
+              <% }); %>
+            </ul>
           </div>
         </section>
         <section class="sections education" id="education">
@@ -193,17 +227,38 @@
             <h3 class="white-smoke">
               <i class="fa-brands fa-medapps"></i> Stack technologiczny:
             </h3>
-            <ul id="techno-stack"></ul>
+            <ul id="techno-stack">
+              <% education.stack_technologiczny.forEach(education => {%>
+              <li>
+                <%= education %>
+              </li>
+              <%}) %>
+            </ul>
             <div>
               <h3 class="white-smoke">
                 <i class="fa-solid fa-language"></i> Języki obce:
               </h3>
-              <article id="myLanguages"></article>
+              <article id="myLanguages">
+                <% education.jezykiObce.forEach(lang => { %>
+                <span
+                  ><%= lang.jezyk %>
+                  <%= lang.poziom %>
+                  -
+                  <%= lang.opis %></span
+                >
+                <% }) %>
+              </article>
             </div>
           </div>
           <div class="courses">
             <h3 class="white-smoke">Moje kursy:</h3>
-            <ul id="myCourses"></ul>
+            <ul id="myCourses">
+              <% education.kursy.forEach(education => {%>
+              <li>
+                <a href="<%= education.link %>"><%= education.nazwa %></a>
+              </li>
+              <%}) %>
+            </ul>
           </div>
         </section>
         <section class="sections projects" id="projects">
