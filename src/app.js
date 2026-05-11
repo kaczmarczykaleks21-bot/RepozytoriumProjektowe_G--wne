@@ -18,13 +18,18 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // ROUTES
+app.get('/', (req, res) => {
+  res.redirect('/AleksKaczmarczyk/CV');
+});
+
 app.use('/AleksKaczmarczyk/CV', mainRouters);
 
 app.use((err, req, res, next) => {
   console.log(err.stack);
 
-  err.statusCode = err.statusCode || 500;
-  err.status = err.status || 'error';
+  res.status(err.statusCode || 500).json({
+    status: err.status || 'error',
+    message: err.message,
+  });
 });
-
 module.exports = app;
