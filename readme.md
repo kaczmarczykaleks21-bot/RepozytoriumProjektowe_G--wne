@@ -2,14 +2,24 @@
 
 Projekt aplikacji CV stworzony w JavaScript jako część projektu uczelnianego. Aplikacja prezentuje dane użytkownika w formie przejrzystego i responsywnego CV dostępnego w przeglądarce.
 
+## LINK DO PROJEKTU
+
+https://repozytoriumprojektowe-glowne.onrender.com
+
 ## 📂 Struktura projektu
 
 ```
-C:.
-└───zad4
-    ├───img            # obrazy i zdjęcia (np. profilowe, ikony)
-    ├───js             # pliki JavaScript (logika aplikacji)
-    └───stylesheets    # pliki CSS (stylowanie aplikacji)
+├── node_modules/          # Zależności projektu (npm)
+└── src/                   # Główny kod aplikacji
+    ├── controllers/      # Logika kontrolerów (obsługa żądań HTTP)
+    ├── data/             # Dane pomocnicze / seed / pliki statyczne danych
+    ├── models/           # Modele Mongoose (schematy baz danych)
+    ├── public/           # Pliki statyczne dostępne dla klienta
+    │   ├── img/          # Obrazy
+    │   ├── js/           # Skrypty frontendowe
+    │   └── stylesheets/  # Style CSS
+    ├── routes/           # Definicje tras (routing Express)
+    └── views/            # Widoki (np. EJS, Pug – warstwa frontendowa)
 ```
 
 ## 🚀 Funkcjonalności
@@ -20,12 +30,16 @@ C:.
 - Lista umiejętności
 - Responsywny layout
 - Dynamiczne generowanie treści przy użyciu JavaScript
+- Dodawanie wpisów z uzyciem localStorage
 
 ## 🛠️ Technologie
 
+- EJS
 - HTML5
 - CSS3
 - JavaScript (ES6)
+- Node.js (express.js)
+- Baza danych: mongoDB (mongoose)
 
 ## ▶️ Uruchomienie projektu
 
@@ -35,21 +49,13 @@ C:.
    git clone https://github.com/kaczmarczykaleks21-bot/RepozytoriumProjektowe_Główne.git
    ```
 
-2. Przejdź do folderu projektu:
-
-   ```
-
-   ```
-
-3. Otwórz plik `index.html` w przeglądarce
+2. Otwórz plik `index.html` w przeglądarce
 
 ## 📸 Podgląd
 
 _(tutaj w przyszłości bedzię screenshot aplikacji)_
 
 ## 📌 Opis działania
-
-Dane CV są przechowywane w plikach JavaScript i dynamicznie renderowane na stronie przy użyciu manipulacji DOM. Stylowanie realizowane jest w osobnych plikach CSS znajdujących się w folderze `stylesheets`.
 
 ## ✨ Możliwe rozszerzenia
 
